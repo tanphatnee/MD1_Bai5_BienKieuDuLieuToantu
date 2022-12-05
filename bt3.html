@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Công Thức Tính S Hình Tròn</title>
+
+</head>
+<body>
+<label> Nhập Bán Kính Hình Tròn.</label>
+<label for="r"></label><input type="text" id="r">
+<button onclick="ChangecToF()" >click</button>
+<h3 id="ketqua">   </h3>
+<script>
+    function ChangecToF(){
+        let r= document.getElementById("r").value
+        document.getElementById("ketqua").innerHTML = "Diện Tích=" + r * r * 3.14
+    }
+</script>
+</body>
